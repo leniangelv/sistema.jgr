@@ -13,7 +13,6 @@
   $query = $conn->prepare($query_plaint_text); //PREPARE_QUERY
   $query->execute(); // EXECUTE_QUERY
   $result = $query->fetchAll(PDO::FETCH_OBJ);
-  print_r($result);
 
   require($root . $partials . 'head.php');
   require($root . $partials . 'nav.public.php');
